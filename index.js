@@ -84,7 +84,7 @@ let srch = () => {
     }
     return false;
 }
-function sortTable(n) {
+function sortTable() {
     var table,
       rows,
       switching,
