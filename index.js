@@ -59,11 +59,15 @@ $(document).ready(() => {
     tableValue()
 })
 let remove = (x) => {
+     let c=confirm("do you want to delete");
+    if(c==true)
+    {
     let data = [];
     data = JSON.parse(localStorage.getItem("UserData"));
     data.splice(x, 1);
     localStorage.setItem("UserData", JSON.stringify(data))
     location.reload()
+    }
 }
 // search 
 let srch = () => {
