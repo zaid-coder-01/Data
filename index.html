@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="mainCont">
+    <div class="subCont">
+        <div class="FormCont">
+          <div>
+            <form id="frm">
+                <div class="personDiv">
+                    <label class="label">Person's Name</label>
+                    <br>
+                  <input type="text" placeholder="First" required id="fname"/>
+                  <input type="text" placeholder="Last" required id="lname"/>
+                </div>
+    
+                <div class="contdiv" style="margin-top: 2rem;">
+                    <label class="label">Contact Number</label>
+                    <br>
+                  <input type="number" placeholder="Enter Contact Number" id="cont" required/>
+                </div>
+    
+                <div class="btndiv" style="margin-top: 2rem;">
+                  <button  type="submit" class="btn" id="sub">SUBMIT</button>
+                </div>
+              </form>   
+        </div>
+        </div>
+
+        <div class="tableCont">
+
+          <div class="search">
+              <form id="srfrm">
+                  <div class="" style="padding-top: 3rem;">
+                    <input type="text" id="searchvalue" onkeyup="srch()" placeholder="Enter Name for search">
+          
+                  </div>
+              </form>
+            </div>
+            <div class="tables">
+                 <table id="table">
+                     <tr>
+                         <th>SN</th>
+                         <th onclick="sortTable(1)">NAME</th>
+                         <th>CONTACT</th>
+                         <th>DELETE</th>
+                     </tr>
+                    <tbody>
+                      
+                    </tbody>
+                 </table>
+            </div>
+      </div>
+    </div>
+
+</div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
